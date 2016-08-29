@@ -1,0 +1,167 @@
+body {
+	max-width: 2200px;
+	margin: 0;
+	padding: 0;
+	background-color:#0F0114;
+	text-align: center;
+	min-height: 420px;
+}
+
+.mainContainer {
+	min-height:420px;
+	margin-top: 5vh;
+	height: 90vh;
+	width: 97vw;
+	text-align: center;
+	border: double blue 5px;
+	border-radius: 25%;
+	background-color: #170E1C;
+	display:inline-block;
+}
+
+h1 {
+	color: white;
+	font-size: 4.8vh;
+	margin:10% auto  15%;
+}
+
+p {
+	font: 4vh bold;
+	margin:10%;
+	color: white;
+}
+
+/***********************
+	MAIN PAGE
+***********************/
+
+
+.questionsContainer {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+.question {
+	text-align: center;
+	font-size: 3.2vh;
+	width:70%;
+	display: block;
+	margin: 7% auto;
+	border: 3px solid blue;
+	height:7%; 
+}
+
+.question:focus {
+	border: 5px solid blue;
+	background: #FCF872;
+}
+
+
+
+.subBtn {
+	text-align: center;
+	width: 30%;
+	font-size:3.5vh;
+	font-weight: bold;
+	color: white;
+	margin-top:5%;
+	padding: 10px;
+	border: 4px red double;
+	background-color: black;
+}
+
+.subBtn:hover {
+	background-color: blue;
+	width: 33%;
+	height: 9%;
+	border: black double 5px;
+}
+
+/****************************
+  STORYBOARD PAGE
+*****************************/
+.pageWrapper {
+	text-align: center;
+	height: 100vh;
+	margin:auto;
+}
+
+.storyContainer {
+	width: 80%;
+	height: 75vh;
+	border: 5px double red;
+	border-radius: 20%;
+	margin:.5vh auto 0;
+	padding:5%;
+	background-color:#170E1C;
+	overflow-y: auto; 
+}
+
+#option1, #option2 {
+	text-align: center;
+	width: auto;
+	font-size:2.8vh;
+	font-weight: bold;
+	color: white;
+	border: 3.5px red double;
+	background-color: black;
+	min-width:40vw;
+	padding:3% 1%;
+	margin:4vh auto 0;
+}
+
+
+#page2 {
+	display: none;
+	background: black;
+	z-index:-1;
+}
+
+/****************************
+	  RESPONSIVE
+*****************************/
+@media screen and (min-width: 850px ) {
+/****MAIN PAGE****/
+	.mainContainer {
+		width: 70vw;
+		height: 90vh;
+		border-radius: 15%;
+		margin-top:5vh;
+	}
+
+	.questionsContainer {
+		width: 40vw;
+		position: static;
+		margin: 0 auto;
+		height: 85vh;
+	}
+
+	.storyContainer{
+		margin-top: 5vh;
+		height: 50vh;
+		width: 60vw;
+		padding-top:1%;
+		border-radius: 15% 15%;
+	}
+
+p {
+	margin:1% 2%;
+	font-size: 5vh;
+	line-height: 1.5em;
+}
+
+.pageWrapper {
+	position: fixed;
+	top: 0;
+	height:100vh;
+	width:100vw;
+}
+#option1, #option2 {
+	font-size: 4vh;
+	padding: 1% 0;
+	min-width: 15vw;
+	margin: 5vh;
+}
+
+}

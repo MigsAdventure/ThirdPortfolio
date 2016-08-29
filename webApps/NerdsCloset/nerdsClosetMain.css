@@ -1,0 +1,202 @@
+/*****************************
+ GENERAL 
+ *****************************/
+ul 	{
+	list-style: none;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	max-width: 1933px;
+	text-align: center;
+}
+
+p {
+	margin:0;
+	padding: 0;
+	color: white;
+	font-size: 1em;
+}
+.fullBg {
+	
+	width: 100vw;
+	height: 160vh;
+	z-index: -1;
+	opacity: .8;
+	position: absolute;
+	background: gray;
+}
+
+.slideShow {
+	margin: 0 auto;
+	height: 40vh; 
+	width: 80vw;
+	background: black;
+}
+
+.slideShow  marquee img {
+	height: 40vh;
+	width: 80vw;
+}
+
+
+.navBar, p {
+	margin: 0;
+	padding: 0;
+}
+
+.navList  li, footer li{
+	display: inline-flex;
+}
+
+.socialIcons {
+	text-align: right;
+}
+
+footer {
+	display: inline-flex;
+}
+
+
+
+.nerdsInfo p {
+	position: relative;
+	bottom:0px;
+}
+
+/*****************************
+NERDS CLOSET MAIN
+ *****************************/
+
+/*****************************
+MOBILE VERSION
+ *****************************/
+
+/*********HEADER*************/
+@media screen and (max-width:800px)	{
+.logo {
+	text-align: center;
+	margin:0;
+	padding: 0;
+}
+
+.logo img {
+	text-align: center;
+	width: 95vw;
+}
+
+.navList {
+
+background: green;
+margin: auto;
+text-align: center;
+}
+
+
+.navList li img {
+	width: 16vw;
+	margin: 0 3vw;
+}
+
+.changeColor{
+	background: red;
+	z-index: 5;
+}
+
+.searchBox {
+text-align:center;
+margin-top: 1%;
+}
+
+.searchField {
+	width: 50vw;
+	padding: 4px 0px;
+}
+
+.socialIcons li {
+	display: inline;
+}
+
+.socialIcons li img {
+	width:12vw;
+	margin-right: 10px;
+}
+
+}
+/*****************************
+DESKTOP VERSION
+ *****************************/
+
+/*********HEADER*************/
+@media screen and (min-width:801px )	{
+.deskNav{
+	display: inline;
+	width: 100%;
+	text-align: center;
+}
+
+header {
+	text-align:center;
+}
+
+.logo img{
+width: 25vw;	
+}
+
+.navList li img {
+	width: 4vw;
+	margin:0 1vw;
+}
+body {
+	width: 100vw;
+}
+
+.leftCol, .rightCol {
+	width: 25vw;
+	height: 100vh;
+	position: fixed;
+	top: 10%;
+	max-width: 370px;
+	opacity: 0.8;
+}
+.leftCol {
+	float: left;
+	background: url("../assets/NerdsCloset/funkoBg_2.jpg");
+	left: 1vw;
+}
+
+.rightCol{
+	float: right;
+	background: url('../assets/NerdsCloset/funkoBg_1.jpg');
+	position: fixed;
+	right:1vw;
+}
+
+.testView {
+	width: 100vw;
+	margin: 0 auto;
+	
+}
+.mainContent header {
+	height: 100vh;
+	display: inline;
+}
+
+.searchBox {
+	position: absolute;
+	top: 1vw;
+	right: 30vw;
+	width: 15vw;
+	
+}
+.socialIcons li img{
+	width: 4vw;
+}
+footer a {
+	font-size: 2em;
+}
+}

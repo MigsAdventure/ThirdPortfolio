@@ -1,0 +1,53 @@
+<!DOCTYPE html>  
+<html>
+  <head>
+  <title>DBZ Hangman</title>
+  <meta name="description" content="Goku Hangman">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="gokuMain.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+      <h3 class="livesCount"></h3><span class="hint"></span>
+     
+    <div class=" col-xs-12 col-md-4 hangmanContainer container-fluid">
+     	    <div class="hangar">
+            <img src = "assets/hangstand.png">
+          </div> <!-- hangar end -->
+        <div class ="gokuContainer">
+
+          <div class="row col-xs-12 gokuSplit">
+            <img class="goku goku1 col-xs-12" src="assets/goku1.png">
+          </div> <!-- row for goku1 end -->
+
+          <div class="row col-xs-12 gokuSplit">
+            <img class="goku goku3 col-xs-4" src="assets/goku3.png">
+            <img class="goku goku2 col-xs-4" src="assets/goku2.png">
+            <img class="goku goku4 col-xs-4" src="assets/goku4.png">
+          </div> <!-- row for goku2 goku3 and goku4 end -->
+          
+          <div class="row col-xs-12 gokuSplit">
+            <img class="goku goku5 col-xs-6" src="assets/goku5.png">
+            <img class="goku goku6 col-xs-6" src="assets/goku6.png">
+          </div> <!-- row for goku5 and goku6 end  -->
+
+          <div class="row col-xs-12 gokuSplit">
+            <img class="goku goku7 col-xs-6" src="assets/goku7.png">
+            <img class="goku goku8 col-xs-6" src="assets/goku8.png">
+          </div> <!-- row for goku7 and goku8 end -->
+        </div>  <!-- gokuContainer end -->
+      </div> <!-- hangmanContainer end -->
+      <div class="bottomHalf col-xs-12 col-md-4">
+        <div class="wordContainer col-xs-12">
+
+        </div> <!-- wordContainer end-->
+        <div class="letterContainer">
+          
+        </div> <!-- letterContainer end -->
+
+        <button type ="button" class="wordButton btn btn-primary">New Word</button>
+    </div> <!--bottomHalf end-->
+    <script  src="goku.js"></script>
+  </body>
+</html>

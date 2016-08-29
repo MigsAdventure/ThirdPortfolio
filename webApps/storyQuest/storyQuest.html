@@ -1,0 +1,36 @@
+<!DOCTYPE  html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Story Time</title>
+		<link href="normalize.css" rel="stylesheet">
+		<link  href="storyQuestMain.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<header>
+		</header>
+		<div class="mainContainer " id="page1">
+			
+			<form class="questionsContainer" method="post"  target="_self">
+				<h1>Hello there! </br>Let me tell you a story</h1>
+				<input class="question" type="text" placeholder="Your name" id = "userName" maxlength="10" required>
+				<input class="question" type="text" placeholder="Name of your best friend" id="bestFriend" maxlength= "10" required>
+				<input class="question" type="text" placeholder="Name of a close friend" id="closeFriend" maxlength="10" required>
+				<input class="subBtn" type="button" onclick="hideMenu()" value="Submit" id = "theButton"> 
+			</form>
+		</div>
+		<div id="page2">
+		<div class= "pageWrapper">
+			
+			<div class = "storyContainer">
+				<p class="storyText" id="storyText2"></p>
+			</div>
+			<input type= "button"  value = "YES" id = "option1" alt = "slide2">
+			<input type ="button"  value = "NO"	 id = "option2" alt = "slide1A">
+		</div>
+	</div>
+		<script src="storyQuest.js"></script>
+	</body>
+</html>
